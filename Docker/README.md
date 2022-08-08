@@ -17,5 +17,6 @@ docker pull  <image-name>:<image:tage>
  - Docker Daemon
     - cotainers
     - local image registry
- - Docker Hug
- ![](2022-08-08-16-38-57.png)
+ - Docker Hub
+
+ - ![](2022-08-08-16-38-57.png)
