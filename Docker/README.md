@@ -19,4 +19,4 @@ docker pull  <image-name>:<image:tage>
     - local image registry
  - Docker Hub
 
- - ![](2022-08-08-16-38-57.png)
+ ![](2022-08-08-16-38-57.png)
