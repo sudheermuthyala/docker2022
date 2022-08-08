@@ -54,11 +54,49 @@ docker run -d -p 1234:80 httpd:latest
 
 docker run -d -P httpd:latest (Host will select randam port)
 ```
-
-
+How to Loginto Running container
+```
+docker exex -it <container-id> bash 
+```
+Without Loginto the container and run the commands inside the container 
+```
+docker exec <container-id> ls -l
+```
+To get the full information about Container-id
+```
+docker inspect
+```
 ## REMOVE THE CONTAINERS & IMAGES
 Remove docker containers 
 ```
 docker rm <CID>
 docker rm -f <CID>
 ```
+
+To check the logs of the container
+```
+docker logs <container-id>
+```
+How to provide the ENV varibles 
+
+**NOTE :**  This is working when container is running 
+```
+docker exec <container-id> env
+```
+How to Run The envinorment varible with container 
+```
+docker run -d -e MYSQL_ROOT_PASSWORD=admin123 mysql
+```
+How to check the ENV varible with container 
+```
+docker exec f4975729a9b4 env
+```
+How To Mount Volume in host to The container  
+```
+docker run -d -e MYSQL_ROOT_PASSWORD=admin123 -v <Host-path>:<container-path> Image-Name
+
+docker run -d -e MYSQL_ROOT_PASSWORD=admin123 -v /home/ec2-user/mysql-folder:/var/lib/mysql  mysql:latest
+
+```
+
+7799342113
