@@ -1,7 +1,7 @@
 ## Adding the user to docker Group 
 
 - sudo usermod -aG docker ec2-user 
-
+image to container 
 ## Docker architecture 
  - DockerCLI
  - Docker Daemon
@@ -34,3 +34,31 @@ docker create <image-id>
 docker create b692a91e4e15
 ```
 **NOTE :**  `docker create b692a91e4e15` this command will create the container and it was not started 
+
+Start The Container
+```
+docker start <container-id>
+```
+To pull, create and start container, you can just run 
+```
+docker run <image>:tag
+```
+To Run the container in detached mode
+```
+docker run -d <image>:tag
+```
+To Run the container Using the Host Port OR Expose the contaiers to the out side world 
+```
+docker run -d -p <host-port>:<container-port> Image-name
+docker run -d -p 1234:80 httpd:latest 
+
+docker run -d -P httpd:latest (Host will select randam port)
+```
+
+
+## REMOVE THE CONTAINERS & IMAGES
+Remove docker containers 
+```
+docker rm <CID>
+docker rm -f <CID>
+```
