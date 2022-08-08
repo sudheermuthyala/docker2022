@@ -33,3 +33,4 @@ Create Container out of image
 docker create <image-id> 
 docker create b692a91e4e15
 ```
+**NOTE :**  `docker create b692a91e4e15` this command will create the container and it was not started 
