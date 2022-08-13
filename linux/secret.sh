@@ -6,4 +6,4 @@ read -p "Enter Your Name :" Name
 read -p "Enter Your favourite Actor :" Actor
 read -p "Enter Your Lucky Number :" lucky
 read -p "Enter Your favourite Dish :" dish
-N1=$(echo -n $Name | cut -c 1)
+first_char_name=$(echo -n $Name | cut -c 1)
