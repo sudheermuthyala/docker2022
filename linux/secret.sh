@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/
 
 echo "welcome to secret Agent Application"
 echo "==================================="
